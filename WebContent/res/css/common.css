@@ -1,0 +1,119 @@
+.markText{
+	border:1px solid rgb(204,204,204);
+	border-radius:8px;
+	-webkit-border-radius:8px;
+	padding:15px;
+	cursor: not-allowed;
+}
+.markText:after{
+	clear: both;
+	display: table;
+    content: " ";
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.markText div.block{
+	display:inline-block;
+	text-align: center;
+}
+.markText div.block span.mtext{
+	display:inline-block;
+	padding:5px 0;
+	margin:0 5px;
+	border-bottom:1px solid red;
+}
+.markText div.block span.mindex{
+	display:inline-block;
+	font-weight: bold;
+	color:#666;
+}
+.exmpleTitle{
+	position:relative;
+}
+.floatRight{
+	position:absolute;
+	right:10px;
+	color:#337ab7;
+	cursor: pointer;
+}
+
+/*公共下拉框*/
+.select-option{
+	position: relative;
+	text-align: left;
+	display: inline-block;
+	color: rgb(81, 90, 110);
+	margin-bottom:10px;
+}
+.select-option input{
+	width: 100%;
+	min-width:60px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	background: #fff;
+	border-radius:5px;
+	font-size: 12px;
+	cursor: pointer;
+	overflow: hidden;
+	white-space: nowrap;
+	padding-left: 8px;
+	padding-right: 24px;
+}
+.select-option ul{
+	max-height: 200px;
+	overflow: auto;
+	margin: 5px 0;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 1px 6px rgba(0,0,0,.2);
+	padding: 5px 0;
+	background-attachment: scroll;
+	transform-origin: center bottom 0px;
+	will-change: top, left;
+	position: absolute;
+	width: 100%;
+	z-index: 190;
+}
+.select-option>div{line-height:18px;}
+.select-option ul li{line-height: 18px;padding: 7px 16px;cursor: pointer;transition: background .2s ease-in-out;}
+.select-option ul li.select{
+	color:rgb(45, 140, 240);
+}
+.select-option ul li.select,.select-option ul li:hover{
+	background-color: rgb(243, 243, 243);
+}
+
+
+/*yuanhui*/
+html,body,container{
+	height: 100%;
+}
+a{
+	text-decoration: none!important;
+}
+
+.firstRow{
+    width: 60px;
+    text-align: center;
+}
+.table-tr>td{
+    vertical-align: middle!important;
+}
+.table-tr:hover{
+    background: #eee;
+}
+.modalInput{
+    width: 300px!important;
+    display: inline-block!important;
+}
+.modalSpan{
+    width: 90px;
+    display: inline-block;
+    text-align: right;
+}
+.labelBox{
+	font-weight: 400;
+	cursor: pointer;
+	margin: 10px 0 0 30px;
+}
