@@ -74,5 +74,5 @@ public class task_info {
     public void setStart_time(String start_time) {
         this.start_time = start_time;
     }
-    
+
 }
