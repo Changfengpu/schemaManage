@@ -19,5 +19,4 @@
 
     <!-- 导入mysql等的配置文件 -->
     <import resource="mysql-context.xml"/>
-
 </beans>
