@@ -3,11 +3,29 @@ package com.veeparch.bean;
 public class task_info {
     private int id;
     private String miaoshu;
+    private int user_id;
     private int a_pass;
     private int b_pass;
     private int c_pass;
     private String start_time;
-    private String end_time;
+
+    public int getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(int user_id) {
+        this.user_id = user_id;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    private String status;
 
     public int getId() {
         return id;
@@ -56,12 +74,5 @@ public class task_info {
     public void setStart_time(String start_time) {
         this.start_time = start_time;
     }
-
-    public String getEnd_time() {
-        return end_time;
-    }
-
-    public void setEnd_time(String end_time) {
-        this.end_time = end_time;
-    }
+    
 }

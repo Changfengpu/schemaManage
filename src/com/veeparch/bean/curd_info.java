@@ -7,8 +7,43 @@ public class curd_info {
     private String target_table;
     private String insert_info;
     private int update_id;
-    private String update_set;
-    private String update_value;
+    private String preValue;
+    private String curValue;
+    private String option_time;
+    private String status;
+
+    public String getCurValue() {
+        return curValue;
+    }
+
+    public void setCurValue(String curValue) {
+        this.curValue = curValue;
+    }
+
+    public String getOption_time() {
+        return option_time;
+    }
+
+    public void setOption_time(String option_time) {
+        this.option_time = option_time;
+    }
+
+    public String getPreValue() {
+        return preValue;
+    }
+
+    public void setPreValue(String preValue) {
+        this.preValue = preValue;
+    }
+
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public int getId() {
         return id;
@@ -57,20 +92,6 @@ public class curd_info {
     public void setUpdate_id(int update_id) {
         this.update_id = update_id;
     }
-
-    public String getUpdate_set() {
-        return update_set;
-    }
-
-    public void setUpdate_set(String update_set) {
-        this.update_set = update_set;
-    }
-
-    public String getUpdate_value() {
-        return update_value;
-    }
-
-    public void setUpdate_value(String update_value) {
-        this.update_value = update_value;
-    }
 }
+
+

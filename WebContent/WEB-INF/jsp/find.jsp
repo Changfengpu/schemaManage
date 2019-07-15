@@ -101,7 +101,7 @@
                     url:"getAllGraphschema.do",
                     type:"post",
                     success:function (data) {
-                        _this.graphSchemas=data;
+                        _this.graphSchemas=data.list;
                     },
                     error:function () {
                         _this.$Notice.error({title:'请求失败！'})
